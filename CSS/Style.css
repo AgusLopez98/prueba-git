@@ -1,0 +1,230 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 4rem;
+    background-image: url(../img/fondo5.jpeg); /* fondo 1,5,8*/
+    background-attachment: fixed;
+    
+}
+
+.span-titulo {
+    color: rgb(0, 162, 255);
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+hr {
+    border: .1rem solid rgb(150, 149, 149);
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    /* Por defecto ya es row*/
+    justify-content: center;
+    font-size: 2.5rem;
+    
+}
+
+.contenedor-nav{
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    font-size: 1.6rem;
+    
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: black;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.navegacion a:hover{
+    background-color: rgb(185, 185, 185);
+    transition: all 1s ease;
+    padding: 2rem;
+}
+
+.hero {
+    background-image: url(../img/HERO.jpeg);
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contenedor-categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.lista-productos {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.producto img {
+    height: 12rem;
+}
+
+.producto a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom-right-radius: .7rem;
+    border-bottom-left-radius: .7rem;
+}
+
+.producto a:hover {
+    background-color: #386ebe;
+    color: white;
+    transition: all .7s ease;
+}
+
+.contenedor-sobreNosotros {
+    display: flex;
+    margin: 0 6rem;
+}
+
+.imagen {
+    flex: 50%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.texto {
+    flex: 50%;
+    background-color: gray;
+    color: white;
+    padding: 4rem 5rem;
+}
+
+.texto p{
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.contenedor-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+
+.lista-productos-grid {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    arma columnas de fracciones exactamente iguales*/
+    grid-template-columns: repeat(6, 1fr);
+    /*column-gap: 2rem;
+    row-gap: 2rem;
+    existe esta forma de gap*/
+    gap: 1rem;
+    width: 50%;
+}
+
+.producto-grid{
+    background-color: #386ebe;
+    text-align: center;
+    color: white;
+}
+
+.moneda{
+    font-weight: bold;
+}
+
+.producto-grid a{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.producto-grid a:hover{
+    background-color: greenyellow;
+    transition: all .5s ease;
+}
+
+.producto-grid img{
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.producto-grid:nth-child(1){
+    /*grid-column-start: 1;
+    grid-column-end: 3;
+    una forma de hacerlo*/
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+} /*la funcion es para seleccionar a un hijo de la clase*/
+
+.producto-grid:nth-child(1) img{
+    height: 100%;
+}
+
+.producto-grid:nth-child(2){
+    grid-column: 1/4;
+}
+
+.producto-grid:nth-child(3){
+    grid-column: 4/7;
+}
+
+.producto-grid:nth-child(4){
+    grid-column: 1/3;
+}
+
+.producto-grid:nth-child(5){
+    grid-column: 3/5;
+}
+
+.producto-grid:nth-child(6){
+    grid-column: 5/7;
+}
