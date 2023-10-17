@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url(../img/BACKGROUND.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 4rem;   
+    background-attachment: fixed; 
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    /* Por defecto ya es row*/
+    justify-content: center;
+    font-size: 2.5rem;
+    
+}
+
+.span-titulo {
+    color: rgb(0, 0, 0);
+}
+
+.contenedor-nav{
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    font-size: 1.6rem;
+    
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: black;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.navegacion a:hover{
+    background-color: rgb(185, 185, 185);
+    transition: all 1s ease;
+    padding: 2rem;
+}
+
+.formulario {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.campo {
+    display: flex;
+    margin: 1.5rem 0 .5rem 0;
+}
+
+.campo label {
+    flex-basis: 8rem;
+}
+
+/*.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+
+una forma es hacer uno por uno, o utilizar la funcion not() y evitar
+solo el que queremos*/
+input:not([type="radio"], [type="submit"]),
+.campo textarea,
+.campo select
+{
+    flex: 1;
+    background-color: rgb(180, 180, 180);
+}
+
+input{
+    margin-bottom: 0.5rem;
+    border: 1px solid rgb(170, 169, 169);
+}
+
+legend{
+    background-color: rgb(0, 153, 255);
+    width: 70%;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+}
+
+.btn{
+    margin-top: .5rem;
+    background-color: rgb(0, 160, 0);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    color: white;
+}
+
+.btn:hover{
+    transition: all .2s ease;
+    background-color: greenyellow;
+}
+
+fieldset{
+    margin-bottom: 1rem;
+    background-color: rgba(88, 108, 146, 0.676);
+}

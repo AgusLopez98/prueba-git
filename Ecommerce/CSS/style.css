@@ -12,13 +12,13 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     margin-bottom: 4rem;
-    background-image: url(../img/fondo5.jpeg); /* fondo 1,5,8*/
-    background-attachment: fixed;
+    background-image: url(../img/fondo4.png); /* fondo 1,5,8*/
     
+    background-attachment: fixed; 
 }
 
 .span-titulo {
-    color: rgb(0, 162, 255);
+    color: rgb(0, 0, 0);
 }
 
 .titulo {
@@ -69,8 +69,8 @@ hr {
 
 .hero {
     background-image: url(../img/HERO.jpeg);
-    height: 40rem;
-    background-position: center;
+    height: 55rem;
+    background-position: center 60%; 
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -117,7 +117,7 @@ hr {
 }
 
 .producto a:hover {
-    background-color: #386ebe;
+    background-color: gray;
     color: white;
     transition: all .7s ease;
 }
@@ -125,6 +125,7 @@ hr {
 .contenedor-sobreNosotros {
     display: flex;
     margin: 0 6rem;
+    margin-top: 5rem;
 }
 
 .imagen {
@@ -163,10 +164,11 @@ hr {
     existe esta forma de gap*/
     gap: 1rem;
     width: 50%;
+    margin-top: 2rem;
 }
 
 .producto-grid{
-    background-color: #386ebe;
+    background-color: rgb(128, 128, 128);
     text-align: center;
     color: white;
 }
@@ -176,7 +178,7 @@ hr {
 }
 
 .producto-grid a{
-    background-color: green;
+    background-color: rgb(133, 176, 182);
     color: white;
     text-decoration: none;
     font-size: 1.8rem;
@@ -186,7 +188,7 @@ hr {
 }
 
 .producto-grid a:hover{
-    background-color: greenyellow;
+    background-color: rgb(175, 231, 238);
     transition: all .5s ease;
 }
 
